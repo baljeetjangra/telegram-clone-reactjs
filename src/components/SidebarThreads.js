@@ -2,12 +2,12 @@ import { Avatar } from "@material-ui/core";
 import React from "react";
 import "../assets/css/sidebarThreads.css";
 
-const SidebarThreads = () => {
+const SidebarThreads = ({ threadName }) => {
   return (
     <div className="sidebarThreads">
       <Avatar />
       <div className="sidebarThreads__details">
-        <h3 className="">Thread Name</h3>
+        <h3 className="">{threadName}</h3>
         <p>info</p>
         <small className="sidebarThreads__timestamp">timestamp</small>
       </div>
